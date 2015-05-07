@@ -43,3 +43,8 @@ group :development, :test do
   gem 'spring'
 end
 
+# Test framework
+gem 'rspec', '~> 3.2.0'
+
+gem 'nokogiri', '1.6.6.2'
+
