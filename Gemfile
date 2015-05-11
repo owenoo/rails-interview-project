@@ -45,6 +45,6 @@ end
 
 # Test framework
 gem 'rspec', '~> 3.2.0'
-
+gem "rspec-rails", :group => [:development, :test]
 gem 'nokogiri', '1.6.6.2'
 
