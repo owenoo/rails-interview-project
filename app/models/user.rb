@@ -17,7 +17,7 @@ class User < ActiveRecord::Base
     kefka.emails.create!(address: "emperor@worldofruin.com")
     dark.emails.create!(address: "whitehairedbadie@heavymetal.com")
     dark.emails.create!(address: "wizard@hotterthanthesun.com")
-    grif.emails.create!(address: "king@eyeofthebalet.com")
+    grif.emails.create!(address: "king@eyeofthebehelit.com")
     grif.emails.create!(address: "leader@bandofthehawks.com")
     gol.emails.create!(address: "darkwarrior@moonbase.com")
     
@@ -34,7 +34,6 @@ class User < ActiveRecord::Base
   end
   
   def self.find_user_ids_in_group(group_name)
-    User.select(:id).joins(:groups).users_in_group(group_name)
+    return User.select(:id).joins(:groups).users_in_group(group_name)
   end
-  
 end
